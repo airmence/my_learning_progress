@@ -1,14 +1,14 @@
 #include<stdio.h>
 
-void open_files(const char *files);
-void writingFiles(files);
+FILE *open_files(const char *files);
+FILE *writingFiles(const char *files);
 
 int main(int argc, char *argv[]){
 	open_files("text.txt");
 	return 0;
 }
 
-void open_files(const char *files_name){
+FILE *open_files(const char *files_name){
 	
 	FILE* files = NULL;
 	files = fopen(files_name, "r+");
@@ -21,12 +21,12 @@ void open_files(const char *files_name){
 		files = fopen(files_name, "w+");
 		printf("files not find creating a new file in read and write\n");
 	}
+	writingFiles(files);
+}
 
+FILE *writingFiles(files){
 	fprintf(files, "hello this is a file");
-
-	if(files != NULL){
-		printf("the files has been closed\n");
-		fclose(files);
-	}
+	fclose(files);
+	return files;
 }
 
