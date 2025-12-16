@@ -1,7 +1,4 @@
-//a preprocessor that call a library, very usefull for using printf for example
-//many more is too discover like string.h math.h float.h can be
-#include<stdio.h>
-
+//a preprocessor that call a library, very usefull for using printf for example //many more is too discover like string.h math.h float.h can be #include<stdio.h>
 
 //a little fonction that just write inside the terminal
 void hello();
