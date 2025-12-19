@@ -1,16 +1,17 @@
 the hangman game
 
 call the fonction for a random word
+having a count of taken char = 10
 
 loop of the game{
-	a char asked
-	having a count of taken char = 10
+	call fonction to read a char
 
-	if yes print
+	if the charactere is in the word then print it
+	
 	else no count - 1
 
-	if count == 0 game over
 	if word find game over
+	if else count == 0 game over
 }
 
 fonction that take the asked charactere and return it(use getchar *fucker)
