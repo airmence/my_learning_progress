@@ -1,0 +1,22 @@
+the hangman game
+
+call the fonction for a random word
+
+loop of the game{
+	a char asked
+	having a count of taken char = 10
+
+	if yes print
+	else no count - 1
+
+	if count == 0 game over
+	if word find game over
+}
+
+fonction that take the asked charactere and return it(use getchar *fucker)
+side note call toupper() from the files ctype.h it make every char typed uppercase
+
+fonction that opened a file with reading mode and take a random word
+return the word
+
+dont furget to create a little files with some word to pick
