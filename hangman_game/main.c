@@ -1,7 +1,9 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<ctype.h>
 
 char readCharactere();
+FILE *open_files(const char *files_name);
 
 int main(int argc, char *argv[]){
 	
@@ -12,7 +14,7 @@ int main(int argc, char *argv[]){
 		char aCharatere = 0;
 		aCharatere = readCharactere();
 		
-		if(){
+		if(aCharatere == ){
 		}
 
 		else{
@@ -20,10 +22,11 @@ int main(int argc, char *argv[]){
 		}
 	}
 	if(){
-
+	}
 	return 0;
 }
 
+// a little fonction that read a charactere
 char readCharactere(){
 	char charactere = 0;
 	charactere = getchar();
@@ -32,5 +35,9 @@ char readCharactere(){
 	while(getchar() != '\n');
 
 	return charactere;
+}
+
+FILE *readeverything(const char a_file){
+
 }
 
