@@ -106,3 +106,4 @@ int dice_player(){
 	return add_up;
 }
 
+FILE scored_file(const char* file_name, const char* open_mode)

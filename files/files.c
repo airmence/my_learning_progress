@@ -1,11 +1,9 @@
 #include<stdio.h>
 
-int main(){
-	FILE* file = NULL;
-	file = fopen("test.txt", "w+");
-	if(file != NULL){
-		fprintf(file, "this is a test on printing in files\n");
-	}
-	fclose(file);
+int main(int argc, char *argv[]){
+
+	
+
 	return 0;
 }
+
